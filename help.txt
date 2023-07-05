@@ -1,0 +1,227 @@
+Sample api of huge collection of users: https://api.randomuser.me/
+Sample api for images: https://placeholder.com
+Sample website for images: https://www.fillmurray.com/
+Sample website for graphics in photoshop: https://elements.envato.com
+Sample theme generator for wordpress sites: https://underscores.me/
+Sample psd website templates: https://sur.ly/i/elemisfreebies.com/
+Sample css for removing default browser styles: http://html5doctor.com/html-5-reset-stylesheet/
+Sample css for color gradient: https://www.colorzilla.com/gradient-editor/
+Brackets is an open-source web development text editor made for web and front-end developers (https://brackets.io/)
+Picture element HTML5 allows support for browsers: https://scottjehl.github.io/picturefill/
+A free app to simulate browser requests to the server: https://www.postman.com
+Explains how the JSON Web Tokens work: https://jwt.io
+Explains cross site request forgery attacks: https://owasp.org/www-community/attacks/csrf
+How to start mongodb server: [create a directory called c:\data\db and run the command mongod while in the mongodb installation directory OR mongod --port 27017 --dbpath C:\MongoDB\data\db]
+For next.js apps: npm run build before npm start
+Websockets: npm install socket.io
+Hide app sensitive data in environment variables: npm install dotenv (must have .env file created in the app folder)
+SASS cmd compiler requires ruby: https://rubyinstaller.org OR npm install gulp gulp-sass sass
+SASS gui compiler: https://prepros.io
+
+import { withRouter } from 'react-router-dom';
+export default withRouter(Navbar)
+npm install uuid
+import uuid from 'uuid/v1';
+localStorage.setItem('name', 'shaun')
+localStorage.getItem
+
+style={{flexWrap: 'wrap', flexShrink: 1, wordWrap: 'break-word', whiteSpace: "normal"}}
+
+FOR cPanel HOSTING
+..................
+public>.htaccess:
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index\.html - [L]
+</IfModule>
+package.json>"homepage": "https://supablog.supatechie.ga"
+...................
+
+CONVERT REACT WEB APP TO NATIVE APP
+...........................
+npm install @capacitor/cli --save-dev
+npx cap init
+npm install @capacitor/core @capacitor/ios @capacitor/android
+npx cap add ios
+npx cap add android
+npx cap open ios
+
+https://capacitorjs.com/docs/getting-started#where-to-go-next
+
+in capacitor.config.ts:
+const config: CapacitorConfig = {
+appId: 'com.example.app',
+appName: 'capacitor-app',
+webDir: 'build',
+bundledWebRuntime: false,
+server: {
+url: 'http://127.0.0.1:3000',
+cleartext: true
+}
+};
+npm run build
+cap copy
+cap sync
+
+ApplicationId:Exposition-Of-Damnable-Heresies
+AppStoreName:com.eodh.app
+
+in index.html:
+viewport-fit=cover
+style={{ paddingTop: "env(safe-area-inset-top)" }}
+.....................
+IONIC:
+npm install @ionic/react
+npm install ionicons
+<IonCard>
+<IonCardHeader>
+<IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+<IonCardTitle>Card Title</IonCardTitle>
+</IonCardHeader>
+<IonCardContent>
+Lorem ipsum lfslflsfslfsfsffssf
+</IonCardContent>
+</IonCard>
+.....................
+
+EXPO USERS
+.....................
+npm install -g expo-cli
+expo init my-expo-project
+cd my-expo-project
+npm start
+npm install -g webpack
+npm install webpack-dev-server -g
+npm install --save webpack-dev-server
+To run your project, navigate to the directory and run one of the following npm commands.
+cd expo-proj
+npm run android
+npm run ios # you need to use macOS to build the iOS project - use managed workflow if you need to do iOS development without a Mac
+npm run web
+You can also open up the projects in the ios and android directories with their respective IDEs.
+
+expo doctor --fix-dependencies, or install individual packages by running expo install [package-name ...]
+
+BUILD LOCALLY
+npx expo install expo-dev-client
+expo build:ios //install and run using the last build
+expo build:android //install and run using the last build
+OR
+npx expo run:ios --device //fresh build for development
+npx expo run:ios --device --configuration Release //fresh build for production
+npx expo run:android --device //fresh build for development
+npx expo run:android --device --variant release //fresh build for production
+
+npx expo start --dev-client //to run or open the app on the development build
+
+BUILD REMOTELY
+npm install -g eas-cli
+eas device:create //to register your device and
+eas build:resign //choose a build already completed and reselect a device to run on
+eas login
+eas build:configure
+eas build -p android https://docs.expo.dev/build/setup/
+eas build -p android --profile preview
+eas build -p android --profile development
+eas build -p android --profile release
+eas build
+....................
+
+npm install typescript -g
+tsc --init      //Create tsconfig.json in project's root folder
+npm audit fix --force
+npm cache verify
+npm cache clean
+npm i color-convert color-name
+npm install -g expo-cli
+npm install expo
+expo r -c
+expo start -c
+node --trace-deprecation
+npm install cors
+const cors = require('cors')
+app.use(cors())
+npm install formidable
+npm install express-fileupload
+npm install pdf-parse
+npm install pdfjs-dist -g
+
+npm install @material-ui/core
+npm install @mui/material @mui/styles
+npm install date-fns
+npm install react-masonry-css
+npm audit fix --force
+npm install nodemon
+Run this command for node to monitor and execute changes: nodemon server.js
+npm install -g json-server
+Run this command for json server to listen for requests: json-server --watch data/db.json --port 8000
+Run this command as administrator in powershell to enable runningscripts such as json server: Set-ExecutionPolicy Unrestricted
+Run this command to spin off a php development server: php -S localhost:8001
+Run this command to spin off a python2 server: python -m SimpleHTTPServer 5000
+Run this command to spin off a python3 server: python -m http.server 5000
+Run this command to spin off a python api server created with FastAPI: uvicorn notes:app --reload --port 5000 [must have already run pip install fastapi and pip install uvicorn]
+Run this command to spin off a python api server created with Flask: python notes.py [must have already run pip install flask and pip install flask-restful]
+Run this command to spin off a mongodb server: cd to C:\Program Files\MongoDB\Server\3.6\bin and enter command mongod, by default, mongodb server will start at port 27017 OR mongod --port 27017 --dbpath "C:\MongoDB\data\db"
+Run this command to allow mongodb to accept connections as it uses ipv6 by default not ipv4: mongod --ipv6
+MONGO_URI=mongodb://gogo-PC/localhost:27017
+MONGO_URI=mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false
+Run this command to spin off a mysql server: mysql -u root -p
+
+GIT TUTORIALS
+$ git --version
+$ git config --global user.name david.gogovie
+$ git config --global user.email david.gogovie@yahoo.com
+$ git config user.name
+$ git init
+$ git status //show untracked files or changed files
+$ git add index.html //add file to the staging area ready for commit
+$ git add . //add all files to the staging area ready for commit
+$ git rm --cached index.html //remove from the staging area
+$ git commit -m "added index and styles files"
+$ git log //show all commits history
+$ git log --oneline
+$ git checkout id //go back to see previous commits. detaches from the master branch
+$ git checkout master //reattach to the master branch
+$ git revert id //deletes a specified commit temporally
+>press shift + : then enter wq to move out of the text editor
+$ git reset //deletes the contents of commits permanently
+$ git reset --hard //deletes the contents of commits permanently fully
+$ git branch feature-1 //creates a new branch of name feature-1
+$ git branch -a //list all branches
+$ git checkout feature-1 //switch to the feature-1 branch
+$ git branch -d feature-1 //deletes a branch but only if it is merged
+$ git branch -D feature-1 //deletes a branch
+$ git checkout -b  feature-a //creates a new branch and checks it out at the same time
+$ git merge feature-a //merges feature-a branch to the current branch you are in
+$ git push https://github.com/davidgogovie/EODH-B.git master
+$ git remote add origin https://github.com/davidgogovie/EODH-B.git master //creates an alias to the url
+$ git push origin master
+$ git clone https://github.com/davidgogovie/EODH-B.git master //creates a copy into the specified folder name master
+$ git clone https://github.com/davidgogovie/EODH-B.git //creates a copy into the default folder name EODH-B
+$ git remote -v //list the origin on the remote repo
+$ git pull origin master
+
+
+dotnet new webapi -n Catalog
+dotnet restore
+dotnet dev-certs https --trust
+dotnet run
+https://localhost:5001/swagger/
+ctrl + . to import namespace automatically
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+https://youtu.be/eJhoR9M3WZs
+Pitch By David Gogovie
+
+https://www.youtube.com/watch?v=nKFM0TU2j00&t=1s
+SUKUUFO sample By David Gogovie
